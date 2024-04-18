@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Hola, </strong> <a href="Flowers.html" class="btn">Anjeli</a> 
+                        <p>
+                            Te escribo esta pequeña carta para recordarte lo importante que eres para mí. No ha sido mucho tiempo pero con cada día que pasa y la forma en la que me tratas hace que me encariñe cada día más con tu persona. Espero te guste este regalo y no olvides, JAMÁS, que aunque esté lejos. Te quiero mucho... 
+                        </p>
+
+                       
+
+                    </div>    
+
+                    
+                </div>
+
+                
+
+            </div>
+
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
